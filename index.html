@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Nostálgica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pokedex-container">
+        <header>
+            <div class="pokedex-header">
+                <div class="header-lights">
+                    <div class="light blue-light"></div>
+                    <div class="light red-light small"></div>
+                    <div class="light yellow-light small"></div>
+                    <div class="light green-light small"></div>
+                </div>
+                <h1>Pokédex Nostálgica</h1>
+            </div>
+             <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar por nombre o #ID...">
+                <button id="search-button">Buscar</button>
+            </div>
+        </header>
+
+        <main class="pokedex-main">
+            <div class="pokemon-list-container">
+                <h2>Lista de Pokémon</h2>
+                <div id="pokemon-list" class="pokemon-grid">
+                    <div class="loader">Cargando...</div>
+                </div>
+                <div class="pagination">
+                    <button id="prev-button" disabled>Anterior</button>
+                    <span id="page-info">Página 1</span>
+                    <button id="next-button">Siguiente</button>
+                </div>
+            </div>
+
+            <div class="pokemon-detail-container">
+                <h2>Detalles del Pokémon</h2>
+                <div id="pokemon-detail" class="pokemon-detail-view">
+                    <p class="instruction-text">Selecciona un Pokémon de la lista o búscalo.</p>
+                    <div id="detail-content" style="display: none;">
+                        <h3 id="pokemon-name"></h3>
+                        <p id="pokemon-id"></p>
+                        <div class="sprite-container">
+                            <img id="pokemon-sprite" src="" alt="Sprite del Pokémon">
+                        </div>
+                        <div class="types-container">
+                            <span class="label">Tipo:</span>
+                            <div id="pokemon-types"></div>
+                        </div>
+                         <div class="stats-container">
+                            <span class="label">Stats:</span>
+                            <ul id="pokemon-stats"></ul>
+                        </div>
+                        <button id="play-cry-button" style="display: none;">Escuchar Grito</button>
+                        <audio id="pokemon-cry" src=""></audio>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
