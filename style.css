@@ -362,6 +362,9 @@ h2 {
         font-size: 0.65rem;
         text-align: center; /* opcional, mejora la visual en pantallas pequeñas */
     }
+    #prev-button, #next-button {
+        font-size: 0.5rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -415,5 +418,8 @@ h2 {
     h2 {
         font-size: 0.65rem;
         text-align: center; /* opcional, mejora la visual en pantallas pequeñas */
+    }
+    #prev-button, #next-button {
+        font-size: 0.5rem;
     }
 }
