@@ -365,6 +365,10 @@ h2 {
     #prev-button, #next-button {
         font-size: 0.5rem;
     }
+    #page-info {
+        font-size: 0.6rem;
+        margin-inline: 3px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -421,5 +425,9 @@ h2 {
     }
     #prev-button, #next-button {
         font-size: 0.5rem;
+    }
+    #page-info {
+        font-size: 0.6rem;
+        margin-inline: 3px;
     }
 }
