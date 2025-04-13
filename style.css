@@ -360,6 +360,7 @@ h2 {
     }
     h2 {
         font-size: 0.65rem;
+        text-align: center; /* opcional, mejora la visual en pantallas pequeñas */
     }
 }
 
@@ -413,5 +414,6 @@ h2 {
     }
     h2 {
         font-size: 0.65rem;
+        text-align: center; /* opcional, mejora la visual en pantallas pequeñas */
     }
 }
