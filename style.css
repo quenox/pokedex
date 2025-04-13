@@ -133,6 +133,7 @@ button:disabled {
     padding: 15px;
     border-radius: 8px;
     border: 2px solid var(--light-grey);
+    overflow-x: auto;  /* si prefieres que se pueda hacer scroll en lugar de cortar */
 }
 
 h2 {
