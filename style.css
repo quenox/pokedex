@@ -358,6 +358,9 @@ h2 {
         width: 15px;
         height: 15px;
     }
+    h2 {
+        font-size: 0.65rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -407,5 +410,8 @@ h2 {
     }
     .pagination button {
         padding: 8px 10px;
+    }
+    h2 {
+        font-size: 0.65rem;
     }
 }
