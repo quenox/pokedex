@@ -72,7 +72,10 @@ header {
 
 .red-light { background: radial-gradient(circle at 30% 30%, #ff6b6b, #c00); }
 .yellow-light { background: radial-gradient(circle at 30% 30%, #fff3a0, #e7c000); }
-.green-light { background: radial-gradient(circle at 30% 30%, #a0ffa0, #00a000); }
+.green-light { 
+    background: radial-gradient(circle at 30% 30%, #a0ffa0, #00a000);
+    animation: slow-blink 2s infinite ease-in-out;
+}
 
 
 h1 {
