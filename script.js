@@ -177,6 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadAndDisplayPokemonDetail(identifier) {
+        const audio = new Audio('assets/audio/sound_pokemon_seleccionado.mp3');
+        audio.play();
         showLoadingDetails(); // Mostrar estado de carga en detalles
         const pokemonData = await fetchPokemonData(identifier);
         displayPokemonDetail(pokemonData); // Mostrar datos o mensaje de no encontrado
