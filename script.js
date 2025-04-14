@@ -182,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showLoadingDetails(); // Mostrar estado de carga en detalles
         const pokemonData = await fetchPokemonData(identifier);
         displayPokemonDetail(pokemonData); // Mostrar datos o mensaje de no encontrado
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
     function updatePaginationControls() {
